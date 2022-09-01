@@ -6,7 +6,7 @@ RUN npm i -g nest
 
 COPY package.json ./
 
-RUN npm install
+RUN npm install --force
 
 COPY . .
 
