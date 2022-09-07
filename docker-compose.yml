@@ -9,7 +9,7 @@ services:
       target: development
       dockerfile: ./Dockerfile
     env_file:
-      - .env
+      - .env.development
     command: npm run start:dev
     volumes:
       - ./:/usr/src/app
