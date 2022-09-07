@@ -14,6 +14,9 @@ model User {
   email     String @map("email") @unique
   password  String @map("password")
 
+  firstName String? @map("first_name")
+  lastName  String? @map("last_name")
+
   collections Collection[]
 
   createdAt        DateTime           @default(now())

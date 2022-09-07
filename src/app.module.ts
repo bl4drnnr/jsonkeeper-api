@@ -15,7 +15,7 @@ import { ConfigModule } from '@nestjs/config';
     SharedModule,
     ConfigModule.forRoot({
       isGlobal: true,
-      envFilePath: `.env`
+      envFilePath: `.env.${process.env.NODE_ENV}`
     })
   ]
 })
